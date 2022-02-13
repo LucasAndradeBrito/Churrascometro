@@ -30,6 +30,8 @@
               type="number"
               name="adultos"
               placeholder="Número de Adultos"
+              maxlength="5"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <p>Quantidade de Crianças:</p>
             <input
@@ -38,6 +40,8 @@
               type="number"
               name="crianças"
               placeholder="Número de Crianças"
+              maxlength="5"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <p>Duração do evento:</p>
             <input
@@ -46,6 +50,8 @@
               type="number"
               name="evento"
               placeholder="Duração (em horas)"
+              maxlength="3"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <button id="calcular">Calcular</button>
 
